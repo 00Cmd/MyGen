@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1086962614806",
+    "firebase_url": "https://mygen-7c2ad.firebaseio.com",
+    "project_id": "mygen-7c2ad",
+    "storage_bucket": "mygen-7c2ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086962614806:android:9efe32fe24ab302d",
+        "android_client_info": {
+          "package_name": "com.example.macbookair.mygen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086962614806-8inmq8ugpupkoeescqd9aeqbpu8h52gr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.macbookair.mygen",
+            "certificate_hash": "18a6f34bd382a5c5189a8f03f2320fbdd0f999ce"
+          }
+        },
+        {
+          "client_id": "1086962614806-m30rrj3rv14e6d092vsrvu0a3k5asuau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5gLnm3eJglG5RB-xZSGhqb4HZadPfcXI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086962614806-m30rrj3rv14e6d092vsrvu0a3k5asuau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
