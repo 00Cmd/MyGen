@@ -9,22 +9,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.macbookair.mygen.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class IntroActivity extends AppCompatActivity {
     private ImageView fadeImg;
     private TextView startQue,welcomeText,toText,myGenText;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-        //Firebase if user is regisered, start loginActivity
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser mUser = mAuth.getCurrentUser();
 
-//        if(mUser != null) {
-//            Intent i = new Intent(IntroActivity.this, LoginActivity.class);
-//            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//            startActivity(i);
-//        }
+        //Firebase if user is regisered, start MainActivity
+        if(mUser != null) {
+            Intent i = new Intent(IntroActivity.this, MainActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
+        }
         find();
         animateWelcomeImg();
         animateWelcomeQue();
